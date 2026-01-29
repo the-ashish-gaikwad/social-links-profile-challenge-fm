@@ -12,8 +12,8 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## Links
 
-- Solution URL: [github.com/the-ashish-gaikwad/blog-card-challenge-fm/](https://github.com/the-ashish-gaikwad/blog-card-challenge-fm/)
-- Live Site URL: [https://the-ashish-gaikwad.github.io/blog-card-challenge-fm/](https://the-ashish-gaikwad.github.io/blog-card-challenge-fm/)
+- Solution URL: [github.com/the-ashish-gaikwad/social-links-profile-challenge-fm/](https://github.com/the-ashish-gaikwad/social-links-profile-challenge-fm/)
+- Live Site URL: [https://the-ashish-gaikwad.github.io/social-links-profile-challenge-fm/](https://the-ashish-gaikwad.github.io/social-links-profile-challenge-fm/)
 
 ## Built with
 
