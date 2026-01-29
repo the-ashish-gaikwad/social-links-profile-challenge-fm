@@ -1,0 +1,194 @@
+@font-face {
+  font-family: 'MyCustomInter';
+  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf) format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-gry-700: hsl(0, 0%, 20%);
+  --clr-gry-800: hsl(0, 0%, 12%);
+  --clr-gry-900: hsl(0, 0%, 8%);
+
+  --fs-100: 0.875rem;
+  /*14px*/
+
+  --ff-inter: 'MyCustomInter', sans-serif;
+
+  --fw-400: 400;
+  --fw-600: 600;
+  --fw-700: 700;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Utility classes  */
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.container {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 80rem;
+}
+
+/* screen reader only */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.main {
+  background-color: var(--clr-gry-900);
+  color: var(--clr-white);
+  min-height: 100vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ff-inter);
+  flex-wrap: wrap;
+}
+
+.profile-card {
+  width: 30rem;
+  background-color: var(--clr-gry-800);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.5rem;
+  margin: 1rem;
+  border-radius: .5rem;
+  gap: .8rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  width: 6rem;
+}
+
+.profile-name {
+  font-weight: var(--fw-600);
+}
+
+.location-info {
+  color: var(--clr-green);
+  font-weight: var(--fw-700);
+}
+
+.bio {
+  font-weight: var(--fw-400);
+}
+
+.other-profile-links {
+  flex-direction: column;
+  width: 100%;
+}
+
+.other-profile-links a {
+  display: block;
+  width: 100%;
+  padding: .8rem;
+  color: var(--clr-white);
+  text-decoration: none;
+  border-radius: .5rem;
+  background-color: var(--clr-gry-700);
+  text-align: center;
+  font-weight: var(--fw-600);
+  transition: color ease .5s, background-color ease .5s;
+}
+
+.other-profile-links a:hover,
+.other-profile-links a:hover {
+  color: var(--clr-gry-800);
+  background-color: var(--clr-green);
+}
